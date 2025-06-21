@@ -1,0 +1,48 @@
+/* body */
+body {
+  font-family: 'Georgia', serif;
+  margin: 0;
+  padding: 0;
+  background: #f7f4ef;
+  color: #222;
+}
+
+/* hero */
+.hero {
+  text-align: center;
+  padding: 2em;
+  background: #1d1d1d;
+  color: #fff;
+}
+
+/* carousel/gallery */
+.carousel {
+  padding: 2em;
+}
+.glide__slide img {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+}
+.glide__slide h3 {
+  margin: 0.5em 0 0;
+}
+
+/* map */
+#map {
+  height: 400px;
+  margin: 1em 0;
+}
+
+/* chart */
+#chart-section {
+  padding: 2em;
+}
+
+/* scroll section */
+.scroll-section {
+  padding: 2em;
+  background: #fffbe7;
+  margin: 2em 0;
+  border-left: 4px solid #a3442e;
+}
