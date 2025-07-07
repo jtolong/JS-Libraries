@@ -267,7 +267,7 @@ body {
 }
 
 .tip {
-  background: #fff;
+  background-image: url('../assets/images/parchment.jpg');
   padding: 2em;
   border-radius: 12px;
   box-shadow: 0 6px 18px rgba(0, 0, 0, 0.08);
