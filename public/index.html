@@ -2,34 +2,44 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>A1 - Webpage</title>
-    <!-- css reset -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reset-css@3.0.0/reset.min.css" />
-    <!-- google fonts -->
-     <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;600;700&display=swap" rel="stylesheet">
-
-    <!-- custom css -->
-    <link rel="stylesheet" href="css/style.css">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Grimm Trails</title>
 
-    <!-- leaflet -->
+    <!-- reset & fonts -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reset-css@3.0.0/reset.min.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;600;700&display=swap"
+        rel="stylesheet" />
+
+    <!-- css libraries -->
     <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@glidejs/glide/dist/css/glide.core.min.css" />
 
-    <!-- aos -->
-    <link href="https://unpkg.com/aos@next/dist/aos.css" rel="stylesheet" />
-
-    <!-- glide -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@glidejs/glide/dist/css/glide.core.min.css">
+    <!-- custom css -->
+    <link rel="stylesheet" href="css/style.css" />
 </head>
 
 <body>
 
+    <!-- header/nav -->
+    <nav class="main-nav">
+        <div class="nav-container">
+            <a href="#" class="logo">Grimm Trails</a>
+            <button class="nav-toggle" aria-label="Toggle menu"><span class="hamburger"></span></button>
+            <ul class="nav-links">
+                <li><a href="#carousel">Tales</a></li>
+                <li><a href="#map-section">Map</a></li>
+                <li><a href="#travel-tips">Tips</a></li>
+                <li><a href="#footer">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
     <!-- hero-->
     <header class="hero">
-        <h1>Grimm Trails</h1>
-        <p>Explore the dark corners of classic fairy tales</p>
+        <h1>Grimm Trails: A Fairy Tale Journey</h1>
+        <p>Follow the winding roads and whispering forests of Germany to uncover the stories behind the myths.</p>
     </header>
 
     <!-- carousel/gallery-->
@@ -38,105 +48,105 @@
             <div class="glide__track" data-glide-el="track">
                 <ul class="glide__slides">
                     <li class="glide__slide">
-                        <img src="assets/hansel-and-gretel.jpg" alt="Hansel & Gretel">
+                        <img src="assets/images/hansel-and-gretel.png" alt="Hansel & Gretel">
                         <h3>Hansel & Gretel</h3>
                         <p class="wiki-blurb" data-title="Hansel_and_Gretel">Loading summary...</p>
                     </li>
                     <li class="glide__slide">
-                        <img src="assets/snow-white.jpg" alt="Snow White">
+                        <img src="assets/images/sleeping-beauty.png" alt="Sleeping Beauty">
+                        <h3>Sleeping Beauty</h3>
+                        <p class="wiki-blurb" data-title="Sleeping_Beauty">Loading summary...</p>
+                    </li>
+                    <li class="glide__slide">
+                        <img src="assets/images/snow-white.png" alt="Snow White">
                         <h3>Snow White</h3>
                         <p class="wiki-blurb" data-title="Snow_White">Loading summary...</p>
                     </li>
                     <li class="glide__slide">
-                        <img src="assets/rumpelstiltskin.jpg" alt="Rumpelstiltskin">
+                        <img src="assets/images/rumpelstiltskin.png" alt="Rumpelstiltskin">
                         <h3>Rumpelstiltskin</h3>
                         <p class="wiki-blurb" data-title="Rumpelstiltskin">Loading summary...</p>
                     </li>
                     <li class="glide__slide">
-                        <img src="assets/the-robber-bridegroom.jpg" alt="The Robber Bridegroom">
+                        <img src="assets/images/the-robber-bridegroom.png" alt="The Robber Bridegroom">
                         <h3>The Robber Bridegroom</h3>
                         <p class="wiki-blurb" data-title="The_Robber_Bridegroom">Loading summary...</p>
                     </li>
                     <li class="glide__slide">
-                        <img src="assets/rapunzel.jpg" alt="Rapunzel">
+                        <img src="assets/images/rapunzel.png" alt="Rapunzel">
                         <h3>Rapunzel</h3>
                         <p class="wiki-blurb" data-title="Rapunzel">Loading summary...</p>
                     </li>
                     <li class="glide__slide">
-                        <img src="assets/cinderella.jpg" alt="Cinderella">
+                        <img src="assets/images/cinderella.png" alt="Cinderella">
                         <h3>Cinderella</h3>
                         <p class="wiki-blurb" data-title="Cinderella">Loading summary...</p>
                     </li>
                     <li class="glide__slide">
-                        <img src="assets/the-frog-prince.jpg" alt="The Frog Prince">
+                        <img src="assets/images/the-frog-prince.png" alt="The Frog Prince">
                         <h3>The Frog Prince</h3>
                         <p class="wiki-blurb" data-title="The_Frog_Prince">Loading summary...</p>
                     </li>
                     <li class="glide__slide">
-                        <img src="assets/little-red-riding-hood.jpg" alt="Little Red Riding Hood">
+                        <img src="assets/images/little-red-riding-hood.png" alt="Little Red Riding Hood">
                         <h3>Little Red Riding Hood</h3>
                         <p class="wiki-blurb" data-title="Little_Red_Riding_Hood">Loading summary...</p>
                     </li>
                     <li class="glide__slide">
-                        <img src="assets/the-elves-and-the-shoemaker.jpg" alt="The Elves and the Shoemaker">
+                        <img src="assets/images/the-elves-and-the-shoemaker.png" alt="The Elves and the Shoemaker">
                         <h3>The Elves and the Shoemaker</h3>
                         <p class="wiki-blurb" data-title="The_Elves_and_the_Shoemaker">Loading summary...</p>
                     </li>
                     <li class="glide__slide">
-                        <img src="assets/the-seven-ravens.jpg" alt="The Seven Ravens">
+                        <img src="assets/images/the-seven-ravens.png" alt="The Seven Ravens">
                         <h3>The Seven Ravens</h3>
                         <p class="wiki-blurb" data-title="The_Seven_Ravens">Loading summary...</p>
                     </li>
                     <li class="glide__slide">
-                        <img src="assets/the-juniper-tree-(fairy-tale).jpg" alt="The Juniper Tree">
+                        <img src="assets/images/the-juniper-tree.png" alt="The Juniper Tree">
                         <h3>The Juniper Tree</h3>
                         <p class="wiki-blurb" data-title="The_Juniper_Tree_(fairy_tale)">Loading summary...</p>
                     </li>
                     <li class="glide__slide">
-                        <img src="assets/briar-rose.jpg" alt="Briar Rose">
-                        <h3>Briar Rose</h3>
-                        <p class="wiki-blurb" data-title="Briar_Rose">Loading summary...</p>
-                    </li>
-                    <li class="glide__slide">
-                        <img src="assets/the-golden-bird.jpg" alt="The Golden Bird">
+                        <img src="assets/images/the-golden-bird.png" alt="The Golden Bird">
                         <h3>The Golden Bird</h3>
                         <p class="wiki-blurb" data-title="The_Golden_Bird">Loading summary...</p>
                     </li>
                     <li class="glide__slide">
-                        <img src="assets/the-twelve-dancing-princesses.jpg" alt="The Twelve Dancing Princesses">
+                        <img src="assets/images/the-twelve-dancing-princesses.png" alt="The Twelve Dancing Princesses">
                         <h3>The Twelve Dancing Princesses</h3>
                         <p class="wiki-blurb" data-title="The_Twelve_Dancing_Princesses">Loading summary...</p>
                     </li>
                     <li class="glide__slide">
-                        <img src="assets/the-six-swans.jpg" alt="The Six Swans">
+                        <img src="assets/images/the-six-swans.png" alt="The Six Swans">
                         <h3>The Six Swans</h3>
                         <p class="wiki-blurb" data-title="The_Six_Swans">Loading summary...</p>
                     </li>
                     <li class="glide__slide">
-                        <img src="assets/the-wolf-and-the-seven-young-goats.jpg"
+                        <img src="assets/images/the-wolf-and-the-seven-young-goats.png"
                             alt="The Wolf and the Seven Young Goats">
                         <h3>The Wolf and the Seven Young Goats</h3>
                         <p class="wiki-blurb" data-title="The_Wolf_and_the_Seven_Young_Goats">Loading summary...</p>
                     </li>
                     <li class="glide__slide">
-                        <img src="assets/mother-holle.jpg" alt="Mother Holle">
+                        <img src="assets/images/mother-holle.png" alt="Mother Holle">
                         <h3>Mother Holle</h3>
                         <p class="wiki-blurb" data-title="Mother_Holle">Loading summary...</p>
                     </li>
                     <li class="glide__slide">
-                        <img src="assets/the-wishing-table-the-gold-ass-and-the-cudgel-in-the-sack.jpg"
+                        <img src="assets/images/the-wishing-table-the-gold-ass-and-the-cudgel-in-the-sack.png"
                             alt="The Wishing-Table, the Gold-Ass, and the Cudgel in the Sack">
                         <h3>The Wishing-Table, the Gold-Ass, and the Cudgel in the Sack</h3>
                         <p class="wiki-blurb" data-title="The_Wishing-Table,_the_Gold-Ass,_and_the_Cudgel_in_the_Sack">
                             Loading summary...</p>
                     </li>
                     <li class="glide__slide">
-                        <img src="assets/bearskin-(german-fairy-tale).jpg" alt="Bearskin">
+                        <img src="assets/images/bearskin.png" alt="Bearskin">
                         <h3>Bearskin</h3>
                         <p class="wiki-blurb" data-title="Bearskin_(German_fairy_tale)">Loading summary...</p>
                     </li>
                     <li class="glide__slide">
-                        <img src="assets/the-three-spinners.jpg" alt="The Three Spinners">
+                        <img src="assets/images/the-three-spinners.png" alt="The Three Spinners">
                         <h3>The Three Spinners</h3>
                         <p class="wiki-blurb" data-title="The_Three_Spinners">Loading summary...</p>
                     </li>
@@ -147,46 +157,171 @@
 
     <!-- map -->
     <section id="map-section">
-        <h2>Fairy Tale Map</h2>
+        <h2>Historic Fairy Tale Map</h2>
         <div id="map"></div>
     </section>
 
     <!-- chart -->
-    <section id="chart-section">
-        <h2>Tale Tropes</h2>
+    <section id="chart-section" class="enchanted-chart">
+        <h2>Fairy Tale Route: Best Travel Months</h2>
         <canvas id="taleChart"></canvas>
+        <div id="travel-tip" class="travel-tip-overlay"></div>
     </section>
 
-    <!-- scroll sections -->
-    <section class="scroll-section" data-aos="fade-up">
-        <section class="scroll-section" data-aos="fade-up">
-            <h2>The Juniper Tree</h2>
-            <p>A stepmother kills her stepson and serves him as stew. A magical bird brings poetic justice.</p>
-            <blockquote>“My mother, she killed me; my father, he ate me...”</blockquote>
-        </section>
 
-        <section class="scroll-section" data-aos="fade-right">
-            <h2>The Twelve Dancing Princesses</h2>
-            <p>Twelve princesses wear out their shoes dancing in a magical realm every night — but where?</p>
-            <blockquote>“Each night, a hidden passage beneath the floor led them away...”</blockquote>
-        </section>
+    <!-- travel tips -->
+    <section id="fairy-tale-tips" class="tips-section">
+        <div id="particles-js"></div>
 
-        <section class="scroll-section" data-aos="fade-left">
-            <h2>The Elves and the Shoemaker</h2>
-            <p>Magical elves secretly help a poor shoemaker by crafting perfect shoes overnight.</p>
-            <blockquote>“No one ever saw them come or go — only the finished shoes remained.”</blockquote>
-        </section>
+        <h2 data-aos="fade-up">Fairy Tale Travel Tips</h2>
 
+        <div class="tips-grid">
+
+            <div class="tip" data-aos="fade-up">
+                <h3>1. Follow the Breadcrumb Trail</h3>
+                <p>Explore the Sababurg Castle ruins deep in Reinhardswald Forest — believed to inspire Hansel &
+                    Gretel’s tale. Bring snacks, just don’t drop them.</p>
+                <a href="https://www.deutsche-maerchenstrasse.com/en/poi/muenden-nature-park-ev" target="_blank"
+                    class="tip-link">Visit Sababurg Castle →</a>
+            </div>
+
+            <div class="tip" data-aos="fade-up">
+                <h3>2. Sleep Like Sleeping Beauty</h3>
+                <p>Book a stay at Sababurg’s fairy tale hotel where wild roses still climb the castle walls — the
+                    perfect place to dream for 100 years (or a weekend).</p>
+                <a href="https://www.deutsche-maerchenstrasse.com/en/poi/sleeping-beauty-castle-sababurg"
+                    target="_blank" class="tip-link">Stay at the Fairy Tale Hotel →</a>
+            </div>
+
+            <div class="tip" data-aos="fade-up">
+                <h3>3. Mirror, Mirror in the Town</h3>
+                <p>In Lohr am Main, the Snow White Museum claims to have the original “talking mirror” from the Brothers
+                    Grimm tale. Who’s the fairest of them all?</p>
+                <a href="https://www.deutsche-maerchenstrasse.com/en/poi/snow-white-village-bergfreiheit"
+                    target="_blank" class="tip-link">Visit the Snow White Museum →</a>
+            </div>
+
+            <div class="tip" data-aos="fade-up">
+                <h3>4. Tower Over the Town Like Rapunzel</h3>
+                <p>Climb the tower at Trendelburg where Rapunzel was said to let down her hair. You can even stay
+                    overnight in the tower suite!</p>
+                <a href="https://www.deutsche-maerchenstrasse.com/en/poi/hotel-burg-trendelburg" target="_blank"
+                    class="tip-link">See Rapunzel’s Tower →</a>
+            </div>
+
+            <div class="tip" data-aos="fade-up">
+                <h3>5. Don’t Talk to Wolves</h3>
+                <p>The Schwalm Region — home of Red Riding Hood — features red-cap folk costumes and deep woods where
+                    “the wolf” still roams (on signage, don’t worry).</p>
+                <a href="https://www.deutsche-maerchenstrasse.com/en/route/travel-stations/towns-regions/schwalm-eder-kreis-county"
+                    target="_blank" class="tip-link">Explore the Red
+                    Riding Hood Trail →</a>
+            </div>
+
+            <div class="tip" data-aos="fade-up">
+                <h3>6. Make a Wish at Mother Holle’s Spring</h3>
+                <p>At Hoher Meißner Mountain, toss a coin into Mother Holle’s spring and make a wish. Just don’t fluff
+                    her featherbed unless you want snow.</p>
+                <a href="https://www.deutsche-maerchenstrasse.com/en/poi/winter-sports-in-the-mountains-hoher-meissner"
+                    target="_blank" class="tip-link">Visit Mother
+                    Holle’s Mountain →</a>
+            </div>
+
+            <div class="tip" data-aos="fade-up">
+                <h3>7. Dance Through the Princess Pavilion</h3>
+                <p>Bad Wildungen hosts fairy tale events and castles that echo “The Twelve Dancing Princesses.” Some say
+                    the floorboards still creak at midnight.</p>
+                <a href="https://www.deutsche-maerchenstrasse.com/en/route/travel-stations/towns-regions/bad-wildungen"
+                    target="_blank" class="tip-link">Explore Bad
+                    Wildungen →</a>
+            </div>
+
+            <div class="tip" data-aos="fade-up">
+                <h3>8. Hunt for the Golden Bird</h3>
+                <p>Stroll the golden courtyards of Schloss Philippsruhe near Hanau. Some say this royal garden inspired
+                    “The Golden Bird.”</p>
+                <a href="https://www.deutsche-maerchenstrasse.com/en/poi/historical-museum-hanau-schloss-philippsruhe-grimmsmaerchenreich"
+                    target="_blank" class="tip-link">Visit Schloss Philippsruhe →</a>
+            </div>
+
+            <div class="tip" data-aos="fade-up">
+                <h3>9. Discover Rumpelstiltskin’s Mill</h3>
+                <p>Near Marburg, follow signs to old water mills and weaving huts — the kind Rumpelstiltskin might’ve
+                    haunted. Spin straw into stories instead of gold.</p>
+                <a href="https://www.deutsche-maerchenstrasse.com/en/poi/landgrafenschloss-marburg-castle"
+                    target="_blank" class="tip-link">Explore Marburg Region
+                    →</a>
+            </div>
+
+            <div class="tip" data-aos="fade-up">
+                <h3>10. Wander the Enchanted Forest by Lantern</h3>
+                <p>Join a twilight tour through Reinhardswald — Germany’s most legendary forest. It’s darker, quieter,
+                    and more magical than you’d expect.</p>
+                <a href="https://www.deutsche-maerchenstrasse.com/en/poi/naturpark-reinhardswald-ev" target="_blank"
+                    class="tip-link">Book a Night Walk →</a>
+            </div>
+            <div class="tip" data-aos="fade-up">
+                <h3>11. Visit the Brothers Grimm House</h3>
+                <p>In Steinau an der Straße, the Brothers Grimm Museum offers artifacts, manuscripts, and story origins.
+                    It's the ultimate fairy tale pilgrimage site.</p>
+                <a href="https://www.deutsche-maerchenstrasse.com/en/poi/museum-brothers-grimm-house-steinau"
+                    target="_blank" class="tip-link">Enter Grimm
+                    World →</a>
+            </div>
+            <div class="tip" data-aos="fade-up">
+                <h3>12. Stroll in Rauschenberg Village</h3>
+                <p>Wander through misty woodlands to reach the historic town of Rauschenberg Village — a perfect
+                    real-world stand-in for many of the towns echoed in the Grimms' Brothers fairytales.</p>
+                <a href="https://www.deutsche-maerchenstrasse.com/en/route/travel-stations/towns-regions/rauschenberg"
+                    target="_blank" class="tip-link">Explore Rauschenberg Village →</a>
+            </div>
+
+        </div>
     </section>
 
-    <!-- js libraries -->
+
+    <!-- footer -->
+    <footer class="site-footer">
+        <div class="footer-flex">
+            <div class="footer-text">
+                <p>© 2025 Grimm Trails. All rights reserved.</p>
+            </div>
+            <div class="footer-social">
+                <a href="#" aria-label="Instagram" title="Instagram">
+                    <svg viewBox="0 0 24 24" fill="currentColor" width="24" height="24">
+                        <path
+                            d="M12 2.2c3.2 0 3.6 0 4.9.1 1.2.1 1.9.3 2.3.5.5.2.9.5 1.3.9.4.4.7.8.9 1.3.2.4.4 1.1.5 2.3.1 1.3.1 1.7.1 4.9s0 3.6-.1 4.9c-.1 1.2-.3 1.9-.5 2.3-.2.5-.5.9-.9 1.3-.4.4-.8.7-1.3.9-.4.2-1.1.4-2.3.5-1.3.1-1.7.1-4.9.1s-3.6 0-4.9-.1c-1.2-.1-1.9-.3-2.3-.5-.5-.2-.9-.5-1.3-.9s-.7-.8-.9-1.3c-.2-.4-.4-1.1-.5-2.3C2.2 15.6 2.2 15.2 2.2 12s0-3.6.1-4.9c.1-1.2.3-1.9.5-2.3.2-.5.5-.9.9-1.3.4-.4.8-.7 1.3-.9.4-.2 1.1-.4 2.3-.5C8.4 2.2 8.8 2.2 12 2.2zm0 1.8c-3.1 0-3.5 0-4.7.1-1 .1-1.6.2-2 .4-.5.2-.8.4-1.2.8-.4.4-.6.7-.8 1.2-.2.4-.3 1-.4 2-.1 1.2-.1 1.6-.1 4.7s0 3.5.1 4.7c.1 1 .2 1.6.4 2 .2.5.4.8.8 1.2.4.4.7.6 1.2.8.4.2 1 .3 2 .4 1.2.1 1.6.1 4.7.1s3.5 0 4.7-.1c1-.1 1.6-.2 2-.4.5-.2.8-.4 1.2-.8.4-.4.6-.7.8-1.2.2-.4.3-1 .4-2 .1-1.2.1-1.6.1-4.7s0-3.5-.1-4.7c-.1-1-.2-1.6-.4-2-.2-.5-.4-.8-.8-1.2-.4-.4-.7-.6-1.2-.8-.4-.2-1-.3-2-.4-1.2-.1-1.6-.1-4.7-.1zM12 6.6c2.9 0 5.4 2.5 5.4 5.4S14.9 17.4 12 17.4 6.6 14.9 6.6 12 9.1 6.6 12 6.6zm0 1.8c-2.1 0-3.6 1.6-3.6 3.6s1.6 3.6 3.6 3.6 3.6-1.6 3.6-3.6-1.6-3.6-3.6-3.6zm5.7-2.2a1.3 1.3 0 1 1-2.6 0 1.3 1.3 0 0 1 2.6 0z" />
+                    </svg>
+                </a>
+                <a href="#" aria-label="Twitter" title="Twitter">
+                    <svg viewBox="0 0 24 24" fill="currentColor" width="24" height="24">
+                        <path
+                            d="M22.46 6c-.77.35-1.6.58-2.46.69a4.18 4.18 0 0 0 1.84-2.3c-.81.48-1.7.83-2.66 1.01A4.14 4.14 0 0 0 16.1 4c-2.3 0-4.17 1.87-4.17 4.18 0 .33.03.65.1.96C7.73 8.96 4.1 7.1 1.67 4.15c-.36.63-.56 1.37-.56 2.16 0 1.49.76 2.8 1.9 3.57a4.2 4.2 0 0 1-1.89-.52v.05c0 2.08 1.48 3.81 3.44 4.2a4.21 4.21 0 0 1-1.88.07 4.18 4.18 0 0 0 3.9 2.9A8.3 8.3 0 0 1 2 18.26 11.7 11.7 0 0 0 8.29 20c7.55 0 11.68-6.26 11.68-11.68 0-.18 0-.36-.01-.54A8.36 8.36 0 0 0 22.46 6z" />
+                    </svg>
+                </a>
+                <a href="#" aria-label="GitHub" title="GitHub">
+                    <svg viewBox="0 0 24 24" fill="currentColor" width="24" height="24">
+                        <path
+                            d="M12 .5C5.73.5.5 5.74.5 12c0 5.08 3.29 9.38 7.86 10.9.58.1.79-.25.79-.56v-2.1c-3.2.7-3.87-1.4-3.87-1.4-.53-1.3-1.3-1.65-1.3-1.65-1.06-.72.08-.71.08-.71 1.18.08 1.8 1.2 1.8 1.2 1.04 1.78 2.74 1.26 3.4.96.1-.75.4-1.27.72-1.56-2.55-.3-5.24-1.27-5.24-5.65 0-1.25.45-2.27 1.2-3.07-.12-.3-.52-1.54.1-3.2 0 0 .98-.32 3.2 1.2a11 11 0 0 1 5.84 0c2.2-1.5 3.18-1.2 3.18-1.2.62 1.67.22 2.9.1 3.2.74.8 1.2 1.82 1.2 3.07 0 4.4-2.7 5.34-5.26 5.63.42.36.76 1.06.76 2.14v3.17c0 .31.2.67.8.56A11.5 11.5 0 0 0 23.5 12C23.5 5.74 18.26.5 12 .5z" />
+                    </svg>
+                </a>
+            </div>
+
+            <a href="#" class="back-to-top">Back to top ↑</a>
+        </div>
+    </footer>
+
+    <!-- JS Libraries -->
     <script src="https://cdn.jsdelivr.net/npm/@glidejs/glide"></script>
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
     <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
 
-    <!-- js -->
-    <script src="script.js"></script>
+    <!-- Custom JS -->
+    <script src="js/main.js"></script>
 
 </body>
 
